@@ -1,0 +1,6 @@
+server:
+  port: 9999
+  context-path: /springboot01
+girl:
+  cupSize: F
+  age: 18
