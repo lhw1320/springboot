@@ -98,9 +98,15 @@ public class GirlController {
     @GetMapping(value = "/girls/age/{age}")
     public List<Girl> listGirlByAge(@PathVariable(value = "age") Integer age){
         LOGGER.info("通过年龄查询女神列表方法执行");
-        return girlService.findGirlByAge(age);
+        return girlService.listGirlByAge(age);
     }
 
+    /**
+     * 获取女神年龄
+     *
+     * @param id 女神ID
+     * @throws Exception 异常
+     */
     @GetMapping(value = "/girls/getAge/{id}")
     public void getAge(@PathVariable(value = "id") Integer id) throws Exception {
         girlService.getAge(id);

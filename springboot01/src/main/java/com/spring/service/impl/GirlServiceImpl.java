@@ -84,7 +84,7 @@ public class GirlServiceImpl implements GirlService {
      * @return 年龄
      */
     @Override
-    public List<Girl> findGirlByAge(Integer age) {
+    public List<Girl> listGirlByAge(Integer age) {
         return girlDao.findGirlByAge(age);
     }
 

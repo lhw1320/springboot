@@ -55,12 +55,12 @@ public interface GirlService {
      * @param age 年龄
      * @return 年龄
      */
-    List<Girl> findGirlByAge(Integer age);
+    List<Girl> listGirlByAge(Integer age);
 
     /**
      *
      *
-     * @param id
+     * @param id 女神ID
      */
     void getAge(Integer id) throws Exception;
 
